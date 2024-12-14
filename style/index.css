@@ -1,0 +1,420 @@
+/* CSS Variables */
+:root {
+    font-size: 16px;
+    --primary-color: #20B486;
+    --primary-low-color: #EAFFF9;
+    --background-color: #f9f9f9;
+    --font--white-color: #f9f9f9;
+    --text-color: #333;
+    --time-color: #667085;
+    --heading-color: #222;
+    --large-font-size: 2.5rem;
+    --md-font-size: 2rem;
+    --sm-font-size: 1.75rem;
+    --xs-font-size: 1.5rem;
+    --font-primary-color: #101828;
+    --font-secondary-color: #646464;
+    --font-third-color: #1A906B;
+    --btn-more-color: #F9FAFB;
+    --font-weight-md: 500;
+    --font-weight-sb: 600;
+    --font-weight-b: 700;
+    --font-weight-light: 300;
+    --line-height: 1.5;
+    --spacing-base: 1rem;
+    --gab-grid: 2rem;
+    --Section-Padding: 4rem 2rem;
+    --Max-Width-Container: 1200px;
+}
+
+* {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* component */
+.section-category {
+    font-weight: var(--font-weight-sb);
+    color: var(--font-third-color);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.section-category+h2 {
+    font-weight: var(--font-weight-sb);
+    font-size: var(--sm-font-size);
+    color: var(--font-primary-color);
+    margin: 0.75rem 0 0.25rem;
+}
+
+.section-category+h2+p {
+    color: var(--font-secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Global Styles */
+body {
+    font-family: system-ui, sans-serif;
+    line-height: var(--line-height);
+    background-color: var(--background-color);
+}
+
+/* Container */
+.container {
+    max-width: 400px;
+    margin: 0px 1rem;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    width: 103%;
+    top: -3px;
+    left: -1px;
+    z-index: 9999999;
+}
+
+nav {
+    padding: 10px;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 18px;
+    height: 12px;
+}
+
+
+nav .hamburger:hover {
+    justify-content: flex-start;
+    transition: all 0.3s ease;
+}
+
+nav .hamburger span {
+    margin: -1px;
+}
+
+nav .hamburger:hover span:last-child {
+    display: none;
+}
+
+nav .hamburger:hover span:first-child {
+    transform: rotate(60deg);
+}
+
+nav .hamburger:hover span:nth-child(2) {
+    transform: rotate(-60deg);
+}
+
+nav .hamburger span {
+    height: 2.5px;
+    background-color: var(--font-primary-color);
+}
+
+nav .nav-list {
+    list-style: none;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+nav .hamburger:hover~.nav-list {
+    display: block;
+    position: absolute;
+    margin-top: 509px;
+    background-color: var(--primary-color);
+    opacity: 0.9;
+    left: 0;
+    right: 0;
+    gap: var(--gab-grid);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--md-font-size);
+    color: var(--font-primary-color);
+    padding: 2rem;
+}
+
+nav .hamburger:hover~.nav-list .nav-item a {
+    font-weight: var(--font-weight-md);
+}
+
+nav .hamburger:hover~.nav-list .nav-item a.active {
+    color: var(--background-color);
+}
+
+nav .logo img {
+    width: 56px;
+}
+
+nav input {
+    display: none;
+}
+
+
+nav .nav-list li a {
+    text-decoration: none;
+    color: var(--font-primary-color);
+    font-weight: var(--font-weight-md);
+
+}
+
+section.hero {
+    margin-top: 80px;
+    background-image: url(../images/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.hero h2 {
+    color: var(--font-primary-color-color);
+    text-transform: capitalize;
+    font-size: var(--md-font-size);
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+section.hero h2 span {
+    color: var(--primary-color);
+}
+
+section.hero p {
+    color: var(--font-secondary-color);
+    text-transform: capitalize;
+    font-size: calc(var(--xs-font-size) - 0.5rem);
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section.hero .button {
+    color: var(--font--white-color);
+    background-color: var(--primary-color);
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: var(--font-weight-md);
+}
+
+section.hero .buttons .primary {
+    color: var(--font--white-color);
+    background-color: var(--primary-color);
+
+}
+
+section.hero .buttons .secondary {
+    color: var(--primary-color);
+    background-color: var(--primary-low-color);
+
+}
+
+.hero-image {
+    display: none;
+}
+
+section.hero .icon-group {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    ;
+}
+
+section.hero .list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+section.hero .list p {
+    font-size: 1.25rem;
+}
+
+section.hero .comp-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+section.hero .comp-logo .item p {
+    color: var(--font-primary-color);
+    font-size: var(--md-font-size);
+    font-weight: var(--font-weight-light);
+    text-align: center;
+}
+
+section.hero .comp-logo .item span {
+    color: var(--primary-color);
+    font-size: var(--md-font-size);
+    font-weight: var(--font-weight-b);
+}
+
+#courses {
+    margin: 4rem 0;
+}
+
+#courses .course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: var(--gab-grid)
+}
+
+#courses .course-grid .course-card {
+    width: 100%;
+    position: relative;
+    padding: 8px 8px 20px;
+    border-radius: 8px;
+    background-color: var(--background-color);
+    -webkit-box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.1);
+    -moz-box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.1);
+    box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#courses .course-grid .course-card:hover {
+    background-color: var(--primary-low-color);
+    color: var(--font-primary-color) !important;
+}
+
+#courses .course-grid .course-card:hover img {
+    transform: scale(1.04);
+    transition: all 0.3s ease-out;
+    margin-top: -3px;
+}
+
+#courses .course-grid .course-card img[alt='card image'] {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.font-title {
+    color: var(--font-third-color);
+    font-weight: var(--font-weight-sb);
+    font-weight: 0.75rem;
+    margin: 1rem 0 0.5rem;
+}
+
+#courses .consume-hours {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.25rem 0.5rem;
+    background-color: var(--background-color);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6px;
+    align-items: center;
+    color: var(--time-color);
+    font-size: 1rem;
+    transition: all 0.3s ease-out;
+}
+
+#courses .course-grid .course-card:hover .consume-hours {
+    top: 11px;
+    right: 11px;
+}
+
+#courses .card-main-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--sm-font-size);
+    font-weight: var(--font-weight-sb);
+    margin: 0.5rem 0;
+}
+
+#courses .card-main-title+p {
+    color: var(--font-secondary-color);
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+}
+
+#courses .rating {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#courses .rating span:first-child {
+    color: var(--font-third-color);
+}
+
+#courses .rating span:last-child {
+    color: var(--font-secondary-color);
+}
+
+#courses .profile-instructor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+#courses .Ins-info h5 {
+    font-size: 0.9rem;
+    font-weight: var(--font-weight-md);
+}
+
+#courses .Ins-info p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--font-secondary-color);
+}
+
+#courses .course-price {
+    color: var(--primary-color);
+    font-size: var(--sm-font-size);
+    font-weight: var(--font-weight-b);
+    margin-left: auto;
+}
+
+#courses .more-btn {
+    text-decoration: none;
+    color: var(--font-primary-color);
+    font-weight: var(--font-weight-sb);
+    padding: 0.8rem 1rem;
+    border: 1px solid #D0D5DD;
+    background-color: #F9FAFB;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#courses .more-btn:hover {
+    background-color: var(--primary-low-color);
+    color: var(--primary-color);
+}
