@@ -50,21 +50,21 @@ Our design system ensures consistency and cohesiveness across the platform:
 
 
 ## Project Structure
-Weekend_Education_Platform/
+Weekend_Education_Platform/ <br>
 │
-├── index.html
-├── style/
-│   └── index.css
-├── images/
-│   ├── logo.svg
-│   ├── hero-image.jpg
-│   ├── card-1.svg
-│   ├── card-2.svg
-│   ├── card-3.svg
-│   └── ... (other images)
-├── js/
-│   └── main.js (if applicable)
-└── README.md
+├── index.html <br>
+├── style/ <br>
+│   └── index.css <br>
+├── images/ <br>
+│   ├── logo.svg <br>
+│   ├── hero-image.jpg <br>
+│   ├── card-1.svg <br>
+│   ├── card-2.svg <br>
+│   ├── card-3.svg <br>
+│   └── ... (other images) <br>
+├── js/ <br>
+│   └── main.js (if applicable) <br>
+└── README.md <br>
 
 
 ## Getting Started
