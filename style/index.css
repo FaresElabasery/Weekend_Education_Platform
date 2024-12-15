@@ -499,3 +499,37 @@ section.hero .comp-logo .item span {
 .feature-card:hover h3 {
     color: var(--background-color);
 }
+
+.testimonials {
+    margin: 4rem 0;
+    background-color: var(--primary-low-color);
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.testimonials .testimonial-card {
+    margin: 2rem 0;
+    font-weight: var(--font-weight-md);
+    color: var(--font-primary-color);
+    font-size: var(--xs-font-size);
+    letter-spacing: -2%;
+}
+
+.testimonials .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials .profile h3{
+    margin-top: 1rem;
+    font-weight: var(--md-font-size);
+    font-size: 1.1rem;
+    color: var(--font-primary-color);
+}
+.testimonials .profile p{
+    color: var(--font-secondary-color);
+    font-weight: var(--font-weight-light);
+    font-size: 1rem;
+}
