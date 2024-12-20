@@ -25,18 +25,26 @@
                     <span></span>
                 </div>
                 <div class="logo">
-                    <img src="images/logo.svg" alt="logo ">
+                    <a href="#"><img src="images/logo.svg" alt="logo "></a>
+                </div>
+                <div class="search-group">
+                    <input class=" search" type="text" placeholder=" Want To Learn?" aria-label="Want To Learn?">
+                    <a href="#courses">Explore</a>
                 </div>
                 <ul class="nav-list">
                     <li class="nav-item"><a class="active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="" href="#features">Features</a></li>
-                    <li class="nav-item"><a class="" href="#courses">Courses</a></li>
-                    <li class="nav-item"><a class="" href="#testimonials">Testimonials</a></li>
-                    <li class="nav-item"><a class="" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a href="#features">Features</a></li>
+                    <li class="nav-item"><a href="#courses">Courses</a></li>
+                    <li class="nav-item"><a href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                    <li class="nav-item"><a href="login.html">Login</a></li>
                 </ul>
-                <div>
-                    <img src="images/search.svg" alt="search ">
-                    <input type="text" placeholder="Search for courses" aria-label="search for courses">
+                <div class="search">
+                    <a href="Courses.html"><img class="search-icon" src="images/search.svg" alt="search "></a>
+                </div>
+                <div class="register">
+                    <a href="login.html">Sign in</a>
+                    <a class="btn-primary" href="login.html">Create free account</a>
                 </div>
             </nav>
         </div>
@@ -44,33 +52,35 @@
 
     <section class="hero">
         <div class="container">
-            <div class="hero-title">
-                <h2>up your <span>skills</span>
-                    to <span>advance</span> your <span>career</span> path</h2>
-                <p>Join our platform to enhance your skills and advance your career.
-                    The latest online learning system and material that help your knowledge growing.
-                </p>
-                <div class="buttons">
-                    <a href="#courses" class="primary button">Get Started</a>
-                    <a href="#contact" class="secondary button">Get free trial</a>
+            <div class="box-hero">
+                <div class="hero-title">
+                    <h2>up your <span>skills</span>
+                        to <span>advance</span> your <span>career</span> path</h2>
+                    <p>Join our platform to enhance your skills and advance your career.
+                        The latest online learning system and material that help your knowledge growing.
+                    </p>
+                    <div class="buttons">
+                        <a href="#courses" class="primary button">Get Started</a>
+                        <a href="#contact" class="secondary button">Get free trial</a>
+                    </div>
+                    <div class="icon-group">
+                        <div class="list">
+                            <img src="images/public-speaking-logo.svg" alt="public speaking logo">
+                            <p>Public Speaking</p>
+                        </div>
+                        <div class="list">
+                            <img src="images/career-oriented-logo.svg" alt="career oriented logo">
+                            <p>Career-Oriented</p>
+                        </div>
+                        <div class="list">
+                            <img src="images/idea-logo.svg" alt="idea logo">
+                            <p>Creative Thinking</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="icon-group">
-                <div class="list">
-                    <img src="images/public-speaking-logo.svg" alt="public speaking logo">
-                    <p>Public Speaking</p>
+                <div class="hero-image">
+                    <img src="images/hero-image.jpg" alt="hero-image">
                 </div>
-                <div class="list">
-                    <img src="images/career-oriented-logo.svg" alt="career oriented logo">
-                    <p>Career-Oriented</p>
-                </div>
-                <div class="list">
-                    <img src="images/idea-logo.svg" alt="idea logo">
-                    <p>Creative Thinking</p>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="images/hero-image.jpg" alt="hero-image">
             </div>
             <div class="comp-logo">
                 <div class="item">
@@ -92,6 +102,47 @@
         </div>
     </section>
 
+    <section id="features" class="features">
+        <div class="container">
+            <p class="section-category">Our Features</p>
+            <h2>Fostering a playful & engaging learning environment</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="title">
+                        <img src="images/feature-1.svg" alt="feature logo">
+                        <h3>Interaction Design</h3>
+                    </div>
+                    <p>Lessons on design that cover the most recent developments.</p>
+                    <div class="link">
+                        <span>Learn more</span>
+                        <img src="images/arrow-white.svg" alt="arrow icon">
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="title">
+                        <img src="images/feature-2.svg" alt="feature logo">
+                        <h3>UX Design Course</h3>
+                    </div>
+                    <p>Classes in development that cover the most recent advancements in web.</p>
+                    <div class="link">
+                        <span>Learn more</span>
+                        <img src="images/arrow-white.svg" alt="arrow icon">
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="title">
+                        <img src="images/feature-3.svg" alt="feature logo">
+                        <h3>Interface Design</h3>
+                    </div>
+                    <p>User Interface Design courses that cover the most recent trends</p>
+                    <div class="link">
+                        <span>Learn more</span>
+                        <img src="images/arrow-white.svg" alt="arrow icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="courses">
         <div class="container">
             <p class="section-category">Explore Programs</p>
@@ -186,49 +237,6 @@
             <a class="btn more-btn" href="AllCourses.html">Explore All Programs</a>
         </div>
     </section>
-
-    <section id="features" class="features">
-        <div class="container">
-            <p class="section-category">Our Features</p>
-            <h2>Fostering a playful & engaging learning environment</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="title">
-                        <img src="images/feature-1.svg" alt="feature logo">
-                        <h3>Interaction Design</h3>
-                    </div>
-                    <p>Lessons on design that cover the most recent developments.</p>
-                    <div class="link">
-                        <span>Learn more</span>
-                        <img src="images/arrow-white.svg" alt="arrow icon">
-                    </div>
-                </div>
-                <div class="feature-card">
-                    <div class="title">
-                        <img src="images/feature-2.svg" alt="feature logo">
-                        <h3>UX Design Course</h3>
-                    </div>
-                    <p>Classes in development that cover the most recent advancements in web.</p>
-                    <div class="link">
-                        <span>Learn more</span>
-                        <img src="images/arrow-white.svg" alt="arrow icon">
-                    </div>
-                </div>
-                <div class="feature-card">
-                    <div class="title">
-                        <img src="images/feature-3.svg" alt="feature logo">
-                        <h3>Interface Design</h3>
-                    </div>
-                    <p>User Interface Design courses that cover the most recent trends</p>
-                    <div class="link">
-                        <span>Learn more</span>
-                        <img src="images/arrow-white.svg" alt="arrow icon">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="testimonials" class="testimonials">
         <div class="container">
             <img src="images/logo.svg" alt="logo image">
