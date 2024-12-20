@@ -365,6 +365,11 @@ section.hero {
     background-repeat: no-repeat;
     background-size: cover;
 }
+@media screen and (min-width: 768px) {
+    section.hero {
+        margin-bottom: -4rem;
+    }
+}
 
 
 
@@ -546,7 +551,7 @@ section.hero .comp-logo .item span {
 
 /* features */
 #features {
-    margin: 4rem 0;
+    margin: -4rem 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -645,7 +650,7 @@ section.hero .comp-logo .item span {
 
 @media screen and (min-width: 768px) {
     #courses {
-        margin: 0;
+        margin: -4rem 0;
     }
 
     #courses .title-section {
@@ -799,7 +804,7 @@ section.hero .comp-logo .item span {
 
 @media screen and (min-width: 768px) {
     #courses {
-        margin: 4rem 0;
+        margin: -4rem 0;
     }
 }
     #courses .course-grid {
