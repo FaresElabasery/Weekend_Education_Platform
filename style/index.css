@@ -801,7 +801,7 @@ section.hero .comp-logo .item span {
     #courses {
         margin: 4rem 0;
     }
-
+}
     #courses .course-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -965,6 +965,12 @@ section.hero .comp-logo .item span {
         padding: 3rem 0;
     }
 
+    @media screen and (min-width: 768px) {
+        .testimonials {
+            margin: 0;
+        }
+    }
+
     .testimonials .testimonial-card {
         margin: 2rem 0;
         font-weight: var(--font-weight-md);
@@ -972,6 +978,14 @@ section.hero .comp-logo .item span {
         font-size: var(--xs-font-size);
         letter-spacing: -2%;
     }
+
+    @media screen and (min-width: 768px) {
+        .testimonials .testimonial-card {
+            font-size: 3rem;
+            letter-spacing: -2px;
+        }
+    }
+
 
     .testimonials .profile {
         display: flex;
