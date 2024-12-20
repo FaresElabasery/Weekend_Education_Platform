@@ -543,11 +543,14 @@ section.hero .comp-logo .item span {
     font-size: var(--md-font-size);
     font-weight: var(--font-weight-b);
 }
-
-#features {
-    margin: 4rem 0;
+/* features */
+@media screen and (min-width: 768px) {
+    .features .title-section{
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+    }
 }
-
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -625,9 +628,7 @@ section.hero .comp-logo .item span {
     color: var(--background-color);
 }
 /* section courses */
-#courses {
-    margin: 4rem 0;
-}
+
 
 #courses .course-grid {
     display: grid;
