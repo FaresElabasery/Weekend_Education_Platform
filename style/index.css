@@ -384,7 +384,7 @@ section.hero h2 {
     }
 
     section.hero h2 {
-        font-size: 4rem;
+        font-size: 3.8rem;
         text-align: start;
         text-transform: capitalize;
 
@@ -392,7 +392,6 @@ section.hero h2 {
 
     .box-hero .hero-image {
         margin-top: -4rem;
-        margin-right: 8rem;
     }
 }
 
