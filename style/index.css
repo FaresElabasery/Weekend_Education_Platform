@@ -551,7 +551,7 @@ section.hero .comp-logo .item span {
 
 /* features */
 #features {
-    margin: -4rem 0;
+    margin: 4rem 0;
 }
 
 @media screen and (min-width: 768px) {
