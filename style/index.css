@@ -601,7 +601,7 @@ section.hero .comp-logo .item span {
 .feature-card .title h3 {
     color: var(--font-primary-color);
     font-weight: var(--font-weight-b);
-    font-size: 24px;
+    font-size: var(--xs-font-size);
 }
 
 .feature-card p {
@@ -874,7 +874,7 @@ section.hero .comp-logo .item span {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        font-size: var(--sm-font-size);
+        font-size: var(--xs-font-size);
         font-weight: var(--font-weight-sb);
         margin: 0.5rem 0;
     }
